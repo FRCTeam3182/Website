@@ -116,7 +116,11 @@
          <p>This part of the website is still under construction. </p>
       </div>
     </div>
+
+   
+
     <div class="col hide-on-small-only m3 l2">
+     <div class="tabs-wrapper">
       <ul class="section table-of-contents">
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
@@ -124,8 +128,10 @@
         <li><a href="#students">Students</a></li>
       </ul>
     </div>
-  </div>
+    </div>
 </div>
+</div>
+
   <footer class="page-footer purple lighten-2">
     <div class="container">
       <div class="row">
@@ -146,11 +152,15 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });
-    </script>
+  </script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $('.tabs-wrapper').pushpin({ top: 50 });
+  });
+  </script>
 
   </body>
