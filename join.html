@@ -10,6 +10,23 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script type="text/javascript">
+  function sendEmail() {
+
+    var first_name = $("#first_name").val();
+    var last_name = $("#last_name").val();
+    var message = $("#textarea1").val();
+
+ var link = "mailto:team3182@gmail.com?"
+             + "&subject=" + first_name + " " + last_name
+             + "&body=" + message
+    ;
+
+    window.open(link);
+    console.log("Hi")
+
+  }
+  </script>
 </head>
 <body>
   <nav class="purple lighten-2" role="navigation">
@@ -36,9 +53,32 @@
     </div>
   </nav>
 <div class="container">
-      <h4>How to Join</h4>
+      <h4>Contact us</h4>
       <hr>
         <p>Email us at team3182@gmail.com for more information on how you can join! No experience required!</p>
+        <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="John" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" placeholder="Smith" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+      </div>
+ <button onclick="sendEmail()" class="btn waves-effect waves-light">Submit
+  </button>
+    </form>
+
+  </div>
 
 </div>
 
@@ -73,5 +113,6 @@
     $('.tabs-wrapper').pushpin({ top: 50 });
   });
   </script>
+  
 
   </body>
