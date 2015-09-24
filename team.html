@@ -9,6 +9,8 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -106,7 +108,7 @@
             <p>Patrick</p>
          </div>
           <div class="col s12 m4">
-            <img src="bios/renee.jpg">
+            <img width="150" height="150" src="bios/mike.jpg">
             <p>Mike</p>
          </div>
          </div>
@@ -115,11 +117,83 @@
       <div id="students" class="section scrollspy">
       <h4>Students</h4>
       <hr>
-         <p>This part of the website is still under construction. </p>
+      <div class="row">
+      <div class="col s12 m4">
+         <a class="waves-effect waves-light modal-trigger" href="#akashBio"><img width="150" height="150" src="bios/students/Akash_Bio.jpg"></a>
+         <p>Akash</p>
+         <br>
+         <a class="waves-effect waves-light modal-trigger" href="#himaBio"><img width="150" height="150" src="bios/students/Hima_Bio.jpg"></a>
+         <p>Hima</p>
+      </div>
+       <div class="col s12 m4">
+         <a class="waves-effect waves-light modal-trigger" href="#ericBio"><img width="150" height="150" src="bios/students/Eric_Bio.jpg"></a>
+         <p>Eric</p>
+      </div>
+       <div class="col s12 m4">
+         <a class="waves-effect waves-light modal-trigger" href="#jakeBio"><img width="150" height="150" src="bios/students/Jake_Bio.jpg"></a>
+         <p>Jake</p>
+      </div>
+      </div>
+      <p><strong>Note: </strong><i>This part of the website is still a work in progress</i></p>
+
       </div>
     </div>
-
-   
+    <div id="akashBio" class="modal">
+        <div class="modal-content">
+          <h4>Akash Binoj</h4>
+          <hr>
+          <div class="row">
+        <div class="col s3">
+          <img width="150" height="150" src="bios/students/Akash_Bio.jpg">
+        </div>
+        <div class="col s9">
+          <p>I am a sophomore at Hall High School. I enjoy riding my bike, working with machines and electronics, and writing code. Last year, I started working with RC devices, in which I built RC airplanes from scratch. I am now working with aerial photography. When I am older, I hope to go to MIT and become an aerospace engineer. </p>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div id="ericBio" class="modal">
+          <div class="modal-content">
+            <h4>Eric Zeiberg</h4>
+            <hr>
+            <div class="row">
+          <div class="col s3">
+            <img width="150" height="150" src="bios/students/Eric_Bio.jpg">
+          </div>
+          <div class="col s9">
+            <p>I am a sophomore at Hall. I joined Athena’s Warriors because I think that robots are super cool, and more people should be involved in robotics clubs. I’m very involved with the software aspect of the robot, and write a lot of code outside of the robot as well (like this website!). I also enjoy playing sax and piano, running, and learning about new cool pieces of tech. </p>
+          </div>
+        </div>
+          </div>
+        </div>
+    <div id="jakeBio" class="modal">
+            <div class="modal-content">
+              <h4>Jake Ginden</h4>
+              <hr>
+              <div class="row">
+            <div class="col s3">
+              <img width="150" height="150" src="bios/students/Jake_Bio.jpg">
+            </div>
+            <div class="col s9">
+              <p>I am a senior at Hall. I am interested in music, food and engineering. I play the drums, and collect vinyls. I joined the team because of Noah, and because of old team member Kaitlin. I am the team robot driver and mascot. </p>
+            </div>
+          </div>
+            </div>
+      </div>
+      <div id="himaBio" class="modal">
+              <div class="modal-content">
+                <h4>Hima Patel</h4>
+                <hr>
+                <div class="row">
+              <div class="col s3">
+                <img width="150" height="150" src="bios/students/Hima_Bio.jpg">
+              </div>
+              <div class="col s9">
+                <p>I am a senior at Hall. I joined Athena's Warriors after taking robotics at Hall because I wanted the experience of designing a robot from scratch and competing. My first competition, Bash at the Beach exposed me to the rush of 5 minute pit times between rounds and silly team pictures during lunch. After that I knew I had to be part of the team and even though I joined mechanical barely knowing how to change a drill bit, the mentors and team members have helped me become confident enough to build another 120 pound beast! In addition to robotics I enjoy drawing, web design, and teaching my fish Mute to do tricks. </p>
+              </div>
+            </div>
+              </div>
+        </div>
 
     <div class="col hide-on-small-only m3 l2">
      <div class="tabs-wrapper">
@@ -132,6 +206,8 @@
     </div>
     </div>
 </div>
+
+
 </div>
 
   <footer class="page-footer purple lighten-2">
@@ -143,7 +219,7 @@
 
 
         </div>
-    
+
       </div>
     </div>
     <div class="footer-copyright">
@@ -152,11 +228,12 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+
+
   <script type="text/javascript">
     $(document).ready(function(){
     $('.scrollspy').scrollSpy();
+     $('.modal-trigger').leanModal();
   });
   </script>
   <script type="text/javascript">
