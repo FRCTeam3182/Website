@@ -7,9 +7,9 @@
  */
 
 
-img.blur { 
- -webkit-filter: blur(3px); 
- filter: blur(3px); 
+img.blur {
+ -webkit-filter: blur(3px);
+ filter: blur(3px);
 
 }
 
@@ -29,7 +29,7 @@ main {
 -webkit-box-flex: 1;
 -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-        flex: 1 0 auto;  
+        flex: 1 0 auto;
 }
 nav ul a,
 nav .brand-logo {
@@ -47,7 +47,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 480px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
