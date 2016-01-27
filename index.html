@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="//cdn.symbolset.com/a39d9e292561da1b20af13ac6124e8d22fec29de/symbolset.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdn.symbolset.com/a39d9e292561da1b20af13ac6124e8d22fec29de/symbolset.js"></script>
 </head>
 
 <body>
-    <nav class="purple" role="navigation" style="position:fixed; z-index: 3;"> 
-        <div class="nav-wrapper container " >
+    <nav class="purple" role="navigation">
+        <div class="nav-wrapper container ">
             <a id="logo-container" href="index.html" class="brand-logo">Athena's Warriors</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
 
-            <ul id="nav-mobile" class="side-nav" style="z-index: 5;">
+            <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="teamcalendar.html">Calendar</a></li>
                 <li><a href="blog.html">News</a></li>
@@ -42,7 +42,7 @@
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
-            <div class="container" style="margin-top: 60px;">
+            <div class="container">
                 <br>
                 <br>
                 <h1 style="text-shadow: 2px 2px 2px #000;" class="header center bold"><em>FRC</em> Team 3182</h1>
@@ -70,7 +70,12 @@
                 <div class="row">
                     <div class="col s12 m3">
                         <div class="icon-block">
-                            <h2 class="center purple-text"><i class="material-icons">settings</i></h2>
+                            <h2 class="center purple-text">
+                               <a class="waves-effect waves-light modal-trigger" href="#engineering">
+                                   <i class="material-icons">settings
+                                        </i>
+                                   </a>
+                                    </h2>
                             <h5 class="center">Engineering</h5>
 
                             <!--             <p class="light">|Engineering Text Snippet|</p>
@@ -80,7 +85,11 @@
 
                     <div class="col s12 m3">
                         <div class="icon-block">
-                            <h2 class="center purple-text"><i class="material-icons">developer_mode</i></h2>
+                            <h2 class="center purple-text">                 <a class="waves-effect waves-light modal-trigger" href="#programing">
+                                    <i class="material-icons">developer_mode
+                                </i>
+                                </a>
+                            </h2>
                             <h5 class="center">Programming</h5>
 
                             <!--             <p class="light">|Programming Text Snippet|</p>
@@ -90,7 +99,7 @@
 
                     <div class="col s12 m3">
                         <div class="icon-block">
-                            <h2 class="center purple-text"><i class="material-icons">assessment</i></h2>
+                            <h2 class="center purple-text"><i class="material-icons"><a class="waves-effect waves-light modal-trigger" href="#marketing">assessment</a></i></h2>
                             <h5 class="center">Marketing</h5>
 
                             <!--             <p class="light">|Team Work Text Snippet|</p>
@@ -99,7 +108,11 @@
                     </div>
                     <div class="col s12 m3">
                         <div class="icon-block">
-                            <h2 class="center purple-text"><i class="material-icons">face</i></h2>
+                            <h2 class="center purple-text">
+                                <a class="waves-effect waves-light modal-trigger" href="#community"><i class="material-icons">face</i>
+                                    </a>
+                                    
+                            </h2>
                             <h5 class="center">Community</h5>
 
                             <!--             <p class="light">|Team Work Text Snippet|</p>
@@ -107,11 +120,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
@@ -119,6 +130,7 @@
                 </div>
             </div>
         </div>
+
         <div class="parallax"><img src="https://i.ytimg.com/vi/VqOKzoHJDjA/maxresdefault.jpg" width="100%" alt="Unsplashed background img 2"></div>
     </div>
     <div>
@@ -132,7 +144,6 @@
                         <p class="left-align light">Team 3182 is currently made up of high school students representing two West Hartford, Conn. high schools. Team members build relationships with different backgrounds who they may not have necessarily met had it not been for the team. Team Mentors are industry professionals representing various industries and occupations. Working with these mentors provides team memebers with some of the first tastes of networking and helping them build connections that will help them as they go on to college, internships and eventually the working world.</p>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -147,14 +158,57 @@
         <div class="parallax"><img src="https://farm8.staticflickr.com/7378/8756459054_c536fcddc3_k.jpg" width="100%" alt="Unsplashed background img 3"></div>
     </div>
 
+    <!-- MODAL STUFF -->
+
+    <div id="engineering" class="modal">
+        <div class="modal-content">
+            <h4>Engineering</h4>
+            <hr>
+            <p>Work with real life engineers to develop mechanical and designing skills.</p>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+    <div id="programing" class="modal">
+        <div class="modal-content">
+            <h4>Programing</h4>
+            <hr>
+            <p>Learn and improve you coding skills and gain new ones along the way.</p>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+    <div id="marketing" class="modal">
+       <div class="modal-content">
+            <h4>Marketing</h4>
+            <hr>
+            <p>Learn and improve business skills, graphic deign, web editing, and comunication skills.</p>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+    <div id="community" class="modal">
+       <div class="modal-content">
+            <h4>Community</h4>
+            <hr>
+            <p>.</p>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
     <footer class="page-footer purple darken-2">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Contact Us</h5>
                     <p class="grey-text text-lighten-4">We'd love to hear from you! Send us an email at team3182@gmail.com to learn more about what we have to offer!</p>
-                    
-                    <button onclick="location.href='join.html';">Click to <a href=join.html>get started now!</button>
+
+                    <button onclick="location.href='join.html';">Click to <a href="join.html">Get in touch now!</a></button>
 
                 </div>
 
@@ -165,6 +219,7 @@
                 Copyright 2015 Athena's Warriors - Team 3182
             </div>
         </div>
+
     </footer>
 
 
@@ -172,6 +227,13 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.scrollspy').scrollSpy();
+            $('.modal-trigger').leanModal();
+        });
+    </script>
 
 </body>
 
