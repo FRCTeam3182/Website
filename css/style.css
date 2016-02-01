@@ -20,6 +20,13 @@ img.blur {
         width: 80%;
     }
 }
+
+/* Center the bio picture titles */
+
+#students p,
+#mentors p {
+    text-align: center;
+}
 body {
     display: -webkit-box;
     display: -webkit-flex;
