@@ -12,6 +12,14 @@ img.blur {
     -webkit-filter: blur(3px);
     filter: blur(3px);
 }
+
+/* Fixes navbar overlapping issue*/
+
+@media only screen and (max-width: 1200px) {
+    nav .container {
+        width: 80%;
+    }
+}
 body {
     display: -webkit-box;
     display: -webkit-flex;
