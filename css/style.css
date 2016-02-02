@@ -20,6 +20,11 @@ img.blur {
         width: 80%;
     }
 }
+@media only screen and (max-width: 400px) {
+    nav .container {
+        width: 95%;
+    }
+}
 
 /* Center the bio picture titles */
 

@@ -13,9 +13,21 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
     <!-- Share stuff-->
-    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript">
+        var switchTo5x = true;
+
+    </script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "78381580-756e-4520-866d-a6fb7d938250",
+            doNotHash: true,
+            doNotCopy: true,
+            hashAddressBar: false
+        });
+
+    </script>
+
 </head>
 
 <body>
@@ -66,8 +78,10 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Contact Us</h5>
-                    <p class="grey-text text-lighten-4">We'd love to hear from you! Send us an email at team3182@gmail.com to learn more about what we have to offer!</p>
-                    <button onclick="location.href='join.html';">Click to <a href=join.html>get started now!</button>
+                    <p class="grey-text text-lighten-4">We'd love to hear from you! Send us an email at team3182@gmail.com to learn more about what we have to offer!</p><span class='st_tumblr_large' displayText='Tumblr'></span>
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_email_large' displayText='Email'></span>
                 </div>
             </div>
         </div>
@@ -80,33 +94,8 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    
-     <!-- Share bar-->
-    <script type="text/javascript">
-        stLight.options({
-            publisher: "78381580-756e-4520-866d-a6fb7d938250",
-            doNotHash: false,
-            doNotCopy: false,
-            hashAddressBar: false
-        });
 
-    </script>
-    <script>
-        var options = {
-            "publisher": "78381580-756e-4520-866d-a6fb7d938250",
-            "position": "right",
-            "ad": {
-                "visible": false,
-                "openDelay": 5,
-                "closeDelay": 0
-            },
-            "chicklets": {
-                "items": ["tumblr", "facebook", "twitter", "email"]
-            }
-        };
-        var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
 
-    </script>
 </body>
 
 </html>
