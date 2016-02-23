@@ -95,3 +95,10 @@ img {
 footer.page-footer {
     margin: 0;
 }
+.collapsible.popout>li {
+  box-shadow: none;
+}
+
+.collapsible.popout>li.active {
+  box-shadow: none;
+}
