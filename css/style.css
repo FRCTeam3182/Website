@@ -95,10 +95,14 @@ img {
 footer.page-footer {
     margin: 0;
 }
-.collapsible.popout>li {
-  box-shadow: none;
+.effect7
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-
-.collapsible.popout>li.active {
-  box-shadow: none;
+.effect7:after
+{
+    right:10px;
+    left:auto;
+    transform:skew(8deg) rotate(3deg);
 }
