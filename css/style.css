@@ -106,3 +106,8 @@ footer.page-footer {
     left:auto;
     transform:skew(8deg) rotate(3deg);
 }
+
+#slash{
+
+			background-image: linear-gradient(60deg, #BA0ED3 50%, #7F0091 50%);
+}
