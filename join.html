@@ -14,24 +14,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <script type="text/javascript">
-        function sendEmail() {
 
-            var first_name = $("#first_name").val();
-            var last_name = $("#last_name").val();
-            var message = $("#textarea1").val();
-
-            var link = "mailto:team3182@gmail.com?" + "&subject=" + first_name + " " + last_name + "&body=" + message;
-
-            window.open(link);
-        }
-
-
-    </script>
 </head>
 
 <body>
-    <nav class="purple" role="navigation">
+    <nav class="black" role="navigation">
         <div class="nav-wrapper container ">
             <a id="logo-container" href="index.html" class="brand-logo">Athena's Warriors</a>
             <ul class="right hide-on-med-and-down">
@@ -86,8 +73,8 @@
         </div>
 
     </div>
-
-    <footer id="slash">
+<br><br>
+   <footer id="slash" class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -96,12 +83,11 @@
                     <span class='st_tumblr_large' displayText='Tumblr'></span>
                     <span class='st_facebook_large' displayText='Facebook'></span>
                     <span class='st_twitter_large' displayText='Tweet'></span>
-                    <span class='st_email_large' displayText='Email'></span>
+                    <span class='st_email_large' displayText='Email'></span> </div>
 
-                </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright black">
             <div class="container">
                 Copyright 2015 Athena's Warriors - Team 3182
             </div>

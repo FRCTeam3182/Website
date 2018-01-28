@@ -1,4 +1,27 @@
 /* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+body{
+
+    font-family: pixel;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(/fonts/DisposableDroidBB.ttf);
+}
+/* Custom Stylesheet */
 
 
 /**
@@ -57,9 +80,7 @@ nav .brand-logo {
 p {
     line-height: 2rem;
 }
-img {
-    width: 100%;
-}
+
 .button-collapse {
     color: #26a69a;
 }
@@ -95,11 +116,7 @@ img {
 footer.page-footer {
     margin: 0;
 }
-.effect7
-{
-    position:relative;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
+
 .effect7:after
 {
     right:10px;
@@ -109,7 +126,7 @@ footer.page-footer {
 
 #slash{
 
-			background-image: linear-gradient(60deg, #BA0ED3 50%, #7F0091 50%);
+			background-image: linear-gradient(60deg, #212121 50%, #7F0091 50%);
 }
 
 .julianmodel{
