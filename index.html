@@ -1,177 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Athena's warriors - Team3182</title>
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team 3182</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <style>
-    body{
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-    font-family: pixel;
-}
+      // Store hash
+      var hash = this.hash;
 
-@font-face {
-    font-family: pixel;
-    src: url(/fonts/DisposableDroidBB.ttf);
-}
-    </style>
-</head>
-<body>
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
 
-      <nav class="black" role="navigation">
-    <div class=" nav-wrapper">
-      <a href="#" class="brand-logo purple-text text-darken-1">Athena's Warriors</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-                <li><a href="teamcalendar.html">Calendar</a></li>
-                <li><a href="blog.html">News</a></li>
-                <li><a href="team.html">The Team</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-                <li><a href="join.html">Join AW</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-      </ul>
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
 
-    </div>
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">FRC Team 3182</h1>
+					<nav id="nav">
+						<ul>
+							<li><a  class="button" href="index.html">Home</a></li>
+                            <li><a href="index.html">Calander</a></li>
+                            <li><a href="index.html">News</a></li>
+                            <li><a href="index.html">The Team</a></li>
+                            <li><a href="index.html">Sponsors</a></li>
+                            <li><a href="index.html">FAQ</a></li>
 
-  </nav>
+							<li><a href="#">Join AW</a></li>
+						</ul>
+					</nav>
+				</header>
 
+			<!-- Banner -->
+				<section id="banner">
+					<h2>FRC Team 3182</h2>
+					<h3>Innovate. Iterate. Illustrate.</h3>
+					<ul class="actions special">
+					<!--	<li><a href="#" class="button primary">Sign Up</a></li> --->
+						<li><a href="#first" class="button">Learn More</a></li>
+					</ul>
+				</section>
 
+			<!-- Main -->
+				<section id="main" class="container">
 
-  <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-
-                <div class="row center white-text">
-
-
-                <h1 style="text-shadow: 2px 2px 2px #000; " class="header center bold">
-                    <br><br>
-                    <em>FRC</em> Team 3182</h1>
-                <div class="row center">
-                    <h5 style="text-shadow: 2px 2px 2px #000;" class="header col s12 light"><b>Innovate. Iterate. Illustrate.</b></h5>
-                </div>
-                    <a href="/team.html" id="download-button" class="btn-large waves-effect waves-light purple darken-2">Learn More</a>
-                </div>
-                <br>
-                <br>
-
-            </div>
-        </div>
-        <div class="parallax"> <canvas id="screen">Your browser does not support HTML5 canvas.</canvas></div>
-    </div>
-
-    <div>
-        <div class="container">
-            <div class="section ">
-                <div class="center">
-                    <h5 class="header col s12 light">Are you interested in.....?</h5>
-                </div>
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div href="#modal1" class="modal-trigger icon-block effect7">
-                            <h2 class="center purple-text">
-                              <i style="margin-top: 5px;" class="material-icons">settings</i></h2>
-                            <h5 style="padding-bottom: 5px;" class="center">Engineering</h5>
-                        </div>
-                    </div>
-
-
-                    <div class="col s12 m4">
-                        <div href="#modal2" class="modal-trigger icon-block effect7">
-                            <h2 class="center purple-text"><i style="margin-top: 5px;" class="material-icons">developer_mode</i></h2>
-                            <h5 style="padding-bottom: 5px;" class="center">Programming</h5>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div href="#modal3" class="modal-trigger icon-block effect7">
-                            <h2 class="center purple-text"><i style="margin-top: 5px;" class="material-icons">assessment</i></h2>
-                            <h5 style="padding-bottom: 5px;" class="center">Marketing</h5>
-                        </div>
-                    </div>
-
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                          <h4>Engineering</h4>
-                          <p>Experience the entire engineering process with professionals from Pratt and Whitteney. You'll acquire problem solving skills and learn how to approach and respond to challenges. With many other teamates, you'll work together to construct various components and electronics for the robot.</p>
-                        </div>
-                      </div>
-                      <div id="modal2" class="modal">
-                          <div class="modal-content">
-                            <h4>Programming</h4>
-                            <p>On programmimg, you'll learn, improve, and apply your coding skills to write the lines of commands that dictate how the robot will be controlled and moved.</p>
-                          </div>
-                        </div>
-                        <div id="modal3" class="modal">
-                            <div class="modal-content">
-                              <h4>Marketing</h4>
-                              <p>Learn/improve business skills, graphic design, web editing, and communication skills. Most importantly, FIRST offers it’s members a sense of community. You learn and grow in a friendly environment. Teamwork is necessary to accomplish tasks, especially during competitions. FIRST stands for: For Inspiration and Recognition of Science and Technology. Kids who participate in FIRST are more geared towards STEM fields because of the experience. 33% of females in FIRST will major in engineering fields. 98% of FIRST participants will gain better problem solving skills. Over 76% of participants strengthen their communication skills.</p>
-                            </div>
-                          </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<section class="box special">
+						<header id="first" class="major smooth-goto">
+							<h2>About Us</h2>
+							<p>Team 3182 is currently made up of high school students representing two West Hartford, Conn. high schools. Team members build relationships with different backgrounds who they may not have necessarily met had it not been for the team. Team Mentors are industry professionals representing various industries and occupations. Working with these mentors provides team memebers with some of the first tastes of networking and helping them build connections that will help them as they go on to college, internships and eventually the working world.</p>
+       <br><br>
+					<ul class="actions special">
+					<!--	<li><a href="#" class="button primary">Sign Up</a></li> --->
+						<li><a href="#second" class="button"><i class="fas fa-angle-down"></i></a></li>
+					</ul>
 
 
-    <div>
-        <div class="container">
-            <div class="section">
+						</header>
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+					</section>
 
-                <div class="row">
-                    <div class="col s12 center">
-                        <h2 class="center purple-text">
+					<section id="second" class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon major fa-gear accent2"></span>
+								<h3>Mechanics</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon major fa-bolt accent3"></span>
+								<h3>Electronics</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon major fa-code accent4"></span>
+								<h3>Software</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon major fa-globe accent5"></span>
+								<h3>Business</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+					</section>
 
-                            <!--<i style="font-size:2em;" class="material-icons">brightness_auto</i> -->
-   <img class="row center" src="Logo%20for%20AW%20website.png" width="30%" alt="Unsplashed background img 2">
-</h2>
-                        <h4>About Us</h4>
-                        <p class="left-align light">Team 3182 is currently made up of high school students representing two West Hartford, Conn. high schools. Team members build relationships with different backgrounds who they may not have necessarily met had it not been for the team. Team Mentors are industry professionals representing various industries and occupations. Working with these mentors provides team memebers with some of the first tastes of networking and helping them build connections that will help them as they go on to college, internships and eventually the working world.</p>
-                    </div>
-                </div>
+					<div class="row">
+						<div class="col-6 col-12-narrower">
 
-            </div>
-             <h4 class="row center">Check out our latest Instagram posts!</h4>
-        </div>
+							<section class="box special">
+								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+								<h3>Sed lorem adipiscing</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
 
-<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/90d4c8d1d31958ca9f6cf21f2c6f4717.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						</div>
+						<div class="col-6 col-12-narrower">
 
-    </div>
+							<section class="box special">
+								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+								<h3>Accumsan integer</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Get in contact</h2>
+					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href=""></a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 
-    <footer id="slash" class="page-footer grey darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Contact Us</h5>
-                    <p class="grey-text text-lighten-4">We'd love to hear from you! Send us an email at team3182@gmail.com to learn more about what we have to offer!</p>
-                    <span class='st_tumblr_large' displayText='Tumblr'></span>
-                    <span class='st_facebook_large' displayText='Facebook'></span>
-                    <span class='st_twitter_large' displayText='Tweet'></span>
-                    <span class='st_email_large' displayText='Email'></span> </div>
-
-            </div>
-        </div>
-        <div class="footer-copyright black">
-            <div class="container">
-                Copyright 2015 Athena's Warriors - Team 3182
-            </div>
-        </div>
-    </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-   <script  src="js/index.js"></script>
-
-  </body>
+	</body>
 </html>
